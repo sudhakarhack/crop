@@ -6,7 +6,7 @@ from deep_translator import GoogleTranslator
 from sklearn.preprocessing import LabelEncoder
 
 # Load the trained model
-model_path = 'crop_production_model13 copy.sav'
+model_path = 'crop_production_model13.sav'
 with open(model_path, 'rb') as file:
     model = joblib.load(file)
 
