@@ -73,7 +73,7 @@ st.title(t("🌾 Crop Production Prediction App"))
 district = st.selectbox(t("🌍 Select District"), districts_translated)
 crop = st.selectbox(t("🌱 Select Crop"), crops_translated)
 season = st.selectbox(t("📅 Select Season"), seasons_translated)
-area = st.number_input(t("📍 Enter Area (in hectares)"), min_value=0.1, format="%.2f")
+area = st.number_input(t("📍 Enter Area (in hectares) ( 1 Hectare = 2.47 acres)"), min_value=0.1, format="%.2f")
 
 # Convert translated values back to original for model input
 district_original = districts[districts_translated.index(district)]
