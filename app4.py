@@ -11,7 +11,7 @@ with open(model_path, 'rb') as file:
     model = joblib.load(file)
 
 # Load dataset to fit encoders
-dataset_path = 'Crop_Production_final_set.csv.csv'
+dataset_path = 'Crop_Production_final_set.csv'
 df = pd.read_csv(dataset_path)
 
 # Initialize label encoders
